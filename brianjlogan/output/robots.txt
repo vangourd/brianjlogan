@@ -1,4 +1,4 @@
-Sitemap: https://brianjosephlogan.com/sitemapindex.xml
+Sitemap: https://brianjlogan.com/sitemapindex.xml
 
 User-Agent: *
-Host: brianjosephlogan.com
+Host: brianjlogan.com

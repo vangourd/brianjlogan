@@ -20,7 +20,7 @@ BLOG_AUTHOR = "Brian Logan"  # (translatable)
 BLOG_TITLE = "Brian J Logan's Blog"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://brianjosephlogan.com/"
+SITE_URL = "https://brianjlogan.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://brianjosephlogan.com/"

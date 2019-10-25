@@ -1,7 +1,7 @@
 .. title: Introduction of my new blog
 .. slug: hello-world
-.. date: 2019-10-25 11:03:12 UTC-04:00
-.. tags: 
+.. date: 2019-07-13 14:03:00 UTC-04:00
+.. status: featured 
 .. category: general
 .. type: micro
 
