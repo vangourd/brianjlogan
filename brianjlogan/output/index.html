@@ -51,7 +51,7 @@
             <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
             <p class="dateline"><a href="posts/hello-world/" rel="bookmark"><time class="post-date published dt-published" datetime="2019-07-13T14:03:00-04:00" title="2019-07-13 14:03">2019-07-13 14:03</time></a></p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
 <p>Many significant contributions to society are simply unidentified as such until far after the origin author or creator can realize what they've done. The likelihood, that the work I create or the content I publish on this blog will surmount to much more than a helpful collection of articles for a few individuals, is slim. However I enjoy the creative process of writing and documenting the things that interest me. </p>
 <p><strong>Therefore welcome to my blog dear stranger</strong>. I hope you enjoy the curated contents within. </p>
@@ -62,9 +62,8 @@
             <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
             <p class="dateline"><a href="posts/about/" rel="bookmark"><time class="post-date published dt-published" datetime="2018-07-13T11:03:12-04:00" title="2018-07-13 11:03">2018-07-13 11:03</time></a></p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
-<h2>About Brian Logan</h2>
 <p>Just some basic info about myself. Typical biography.</p>
 <p>Hey thanks for being interested in me. I'll provide some basic info for you but if there's something else you would like to know feel free to reach out to me.</p>
 <h3>Employment</h3>
@@ -81,74 +80,11 @@
             <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
             <p class="dateline"><a href="posts/resolvconf-two-interfaces/" rel="bookmark"><time class="post-date published dt-published" datetime="2018-03-23T11:03:12-04:00" title="2018-03-23 11:03">2018-03-23 11:03</time></a></p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
 <p>Resolvconf on two interfaces with discrete networks
 Getting resolvconf to resolve dns entries on two interfaces with discrete networks and dns servers.</p>
-<p>Why you would want this: - see at the end my notes on why you don't want to do this as well.</p>
-<p>You have two discrete networks that can't be joined and can't share DNS information across their network boundaries.
-You have been somehow allowed to join two interfaces to a server connecting to each of these networks.
-What you might expect
-You would be tempted to think you can use your usual utilities for this. In my case I specifically rely on /etc/network/interfaces on my Ubuntu machines. It is old and reliable for me as systemd-network gets it act together.</p>
-<p>You might configure your /etc/network/interfaces files to look like this</p>
-<pre class="code literal-block"><span></span><span class="n">auto</span> <span class="n">eth0</span> <span class="n">eth1</span>
-
-<span class="n">iface</span> <span class="n">eth0</span> <span class="n">inet</span> <span class="k">static</span> 
-    <span class="n">address</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="mi">32</span> 
-    <span class="n">gateway</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="mi">0</span> 
-    <span class="n">network</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span> 
-    <span class="n">netmask</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span> 
-    <span class="n">dns</span><span class="o">-</span><span class="n">nameservers</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="mi">1</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="mi">2</span> 
-    <span class="n">dns</span><span class="o">-</span><span class="k">search</span> <span class="n">sub</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span>
-
-<span class="n">iface</span> <span class="n">eth1</span> <span class="n">inet</span> <span class="k">static</span> 
-    <span class="p">(</span><span class="n">same</span> <span class="n">entries</span> <span class="k">as</span> <span class="n">above</span> <span class="k">with</span> <span class="n">different</span> <span class="n">subnet</span><span class="p">)</span> 
-    <span class="n">dns</span><span class="o">-</span><span class="n">nameservers</span> <span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="mi">1</span> <span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="mi">2</span> 
-    <span class="n">dns</span><span class="o">-</span><span class="k">search</span> <span class="n">otherdomain</span><span class="p">.</span><span class="n">net</span>
-</pre>
-
-
-<p>If I have these dns entries in both interfaces on a reboot it will turn my /etc/resolv.conf into</p>
-<pre class="code literal-block"><span></span><span class="n">nameserver</span> <span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="mi">1</span> 
-<span class="n">nameserver</span> <span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="mi">2</span> 
-<span class="n">nameserver</span> <span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="mi">1</span> 
-<span class="k">search</span> <span class="n">sub</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span> <span class="n">otherdomain</span><span class="p">.</span><span class="n">net</span>
-</pre>
-
-
-<p>Which results in not being able to resolve anything on sub.contoso.com but being able to resolve otherdomain.net.</p>
-<p>What the heck!!?</p>
-<p>Why wouldn't the nameserver correlate to the interface stanza I setup?</p>
-<p>Why it doesn't work
-Default entry limit
-I found here that you can only add up to 3 entries by default in resolv.conf.</p>
-<p>You can of course as usual in linux tinker deeper into the stack and increase this limit in &gt; /usr/include/resolv.h with the lines.</p>
-<p>/<em>
-</em> Global defines and variables for resolver stub.
-*/</p>
-<h2>define MAXNS                  3       /<em> max # name servers we'll track </em>/</h2>
-<p>But we're just trying to query two networks so there's no reason to open another element to cause bugs/issues. Moving on…</p>
-<p>The process that /etc/network/interfaces appears to use is it rotates nameservers as it parses the config. The last dns-nameserver entries you have is what goes into resolv.conf. So when you are putting dns info in your interfaces file it's mostly a convenience to save you from writing to your resolv/conf and messing with resolvconf and its database. The order you place them in the interfaces file, the stanza, or even the corresponding dns-search means nothing.</p>
-<p>If you have 8 dns entries in your interfaces file it will be cut to the last 3 entries and your dns-search string concatenated into a very long search line in your resolv.conf.</p>
-<p>Timeout not Rotation
-Default behavior for multiple nameservers is to only trigger the secondary server if there is a timeout in the request a.k.a the server is down or there are network problems.</p>
-<p>This is a failover mechanism which is what you want for most situations. Good idea. Definitely best practice, but doesn't accomplish our goal at the moment. What we need is for our resolver to try all of the configured servers for the entry we are looking for before giving up. So..</p>
-<p>Instead of trying more servers on TIMEOUT we try more servers on SERVFAIL.</p>
-<p>The fix.
-Configure your interfaces file as normal but omit nameservers until they fit in your resolv.conf or adjust your nameserver limit as shown above. Realize though that for every additional nameserver you are adding more servers to rotate through before you can query your end-server.</p>
-<p>Modify the resolvconf database Open up /etc/resolvconf/resolv.conf.d/base and create the following</p>
-<p>options rotate
-wq! and/or your editors save and close equivalent</p>
-<p>It works! Why you shouldn't do this
-First of all you now have to specify by FQDN for every query so anything coded to just a hostname lookup is going to fail.
-Secondly you're rotating through your dns-servers for these queries when really you should have 1 authoritative DNS server
-Thirdly this type of customization makes your setup a snowflake and you shouldn't be engineering your network to be a snowflake (that's another blog post)
-If your argument is 'but how else will I contact the devices?'</p>
-<p>In my opinion this is a cop out. Someone isn't doing networking. Your computer should be able to talk to what it needs from its primary interface. We have routers, switches, and firewalls for connecting users and applications. Subscribing a computer as a client on two different networks is unnecessary complexity that will confuse future admins.</p>
-<p>But perfection is the root of all procrastination so when you need to get nitty gritty don't let me stop you from doing what you have to do. You'll just find your answer elsewhere or heaven forbid write your own solution in node.js.</p>
-<p>Sources:
-Russel Ballestrini | Set-Dns-Resolver-Options Note: His item on the rotate setting here didn't actually work for me but showed me a way of editing resolvconf easily that will stay when generated by resolvconf.</p>
-<p>Into the Void | resolv.conf options and discovery of ISP DNS Issue Note: I noticed the proper options setting for resolv.conf in here which worked for my server. Resolv.conf Manpage</p>
+<p class="more"><a href="posts/resolvconf-two-interfaces/">Read more…</a></p>
 </div>
     </div>
     </article>

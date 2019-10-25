@@ -1,10 +1,12 @@
 .. title: Resolvconf on two interfaces with discrete networks
 .. date: 2018-03-23 11:03:12 UTC-04:00
 .. category: general
-.. previewimage: /images/resolvconf.jpg
+.. previewimage: /images/googlepic.jpg
 
 Resolvconf on two interfaces with discrete networks
 Getting resolvconf to resolve dns entries on two interfaces with discrete networks and dns servers.
+
+<!-- TEASER_END -->
 
 Why you would want this: - see at the end my notes on why you don't want to do this as well.
 
@@ -47,9 +49,8 @@ I found here that you can only add up to 3 entries by default in resolv.conf.
 
 You can of course as usual in linux tinker deeper into the stack and increase this limit in > /usr/include/resolv.h with the lines.
 
-/*
-* Global defines and variables for resolver stub.
-*/
+Global defines and variables for resolver stub.
+
 # define MAXNS                  3       /* max # name servers we'll track */
 But we're just trying to query two networks so there's no reason to open another element to cause bugs/issues. Moving on…
 

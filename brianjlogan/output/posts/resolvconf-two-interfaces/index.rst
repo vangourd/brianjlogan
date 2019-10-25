@@ -6,7 +6,7 @@
 Resolvconf on two interfaces with discrete networks
 Getting resolvconf to resolve dns entries on two interfaces with discrete networks and dns servers.
 
-<!-- TEASER_END -->
+.. TEASER_END
 
 Why you would want this: - see at the end my notes on why you don't want to do this as well.
 

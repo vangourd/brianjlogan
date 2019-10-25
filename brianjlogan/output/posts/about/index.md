@@ -3,7 +3,6 @@
 .. date: 2018-07-13 11:03:12 UTC-04:00
 .. category: general
 
-# About Brian Logan
 Just some basic info about myself. Typical biography.
 
 Hey thanks for being interested in me. I'll provide some basic info for you but if there's something else you would like to know feel free to reach out to me.
