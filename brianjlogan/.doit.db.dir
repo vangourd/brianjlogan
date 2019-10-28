@@ -34,7 +34,7 @@
 '_scan_locs:sitemap', (134656, 1171)
 'copy_assets:output\\assets\\css\\theme.css', (61440, 871)
 'copy_assets', (25088, 56)
-'sitemap:output\\sitemap.xml', (130560, 2235)
+'sitemap:output\\sitemap.xml', (130560, 2233)
 'copy_assets:output\\assets\\css\\html4css1.css', (204288, 674)
 'render_posts', (27136, 56)
 'render_taxonomies', (27648, 56)
