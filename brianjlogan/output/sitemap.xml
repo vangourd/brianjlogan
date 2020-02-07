@@ -7,43 +7,55 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://brianjlogan.com/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2020-02-07T16:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/2018/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://brianjlogan.com/2019/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://brianjlogan.com/archive.html</loc>
   <lastmod>2019-11-07T03:16:00Z</lastmod>
  </url>
  <url>
+  <loc>https://brianjlogan.com/2019/</loc>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/2020/</loc>
+  <lastmod>2020-02-07T16:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/archive.html</loc>
+  <lastmod>2020-02-07T16:36:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://brianjlogan.com/categories/</loc>
-  <lastmod>2019-11-07T03:35:00Z</lastmod>
+  <lastmod>2020-02-07T16:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_general/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/cat_linux/</loc>
+  <lastmod>2020-02-07T16:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_muses/</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2019-11-07T03:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_musings/</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2019-11-07T03:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/cat_technology/</loc>
+  <lastmod>2020-02-07T16:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_testing/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T01:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/mindfulness-philosophy/</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2019-11-07T03:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/mindfulness/</loc>
@@ -54,39 +66,55 @@
   <lastmod>2019-11-07T03:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://brianjlogan.com/categories/rhce/</loc>
+  <lastmod>2020-02-07T16:37:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/rhel/</loc>
+  <lastmod>2020-02-07T16:20:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://brianjlogan.com/galleries/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/listings/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/pages/contact-me/</loc>
-  <lastmod>2019-11-07T01:25:00Z</lastmod>
+  <lastmod>2019-11-07T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/pages/contact/</loc>
-  <lastmod>2019-11-07T01:18:00Z</lastmod>
+  <lastmod>2019-11-07T01:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/about/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/finding-oneself-is-a-journey-of-inwardness-not-outwardness/</loc>
-  <lastmod>2019-11-07T01:41:00Z</lastmod>
+  <lastmod>2019-11-07T02:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/</loc>
-  <lastmod>2019-11-07T02:39:00Z</lastmod>
+  <lastmod>2019-11-07T03:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/hello-world/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/posts/prepping-for-the-red-hat-exam/</loc>
+  <lastmod>2020-02-07T16:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/resolvconf-two-interfaces/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2019-11-07T03:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/posts/studying-for-the-rhel-exam/</loc>
+  <lastmod>2020-02-07T16:20:00Z</lastmod>
  </url>
 </urlset>

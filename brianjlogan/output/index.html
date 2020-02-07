@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://brianjlogan.com/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/prepping-for-the-red-hat-exam/" type="text/html">
 </head>
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -85,7 +85,26 @@ float:left;
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/" class="u-url">Finding solace is a journey of inwardness not outwardness</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/prepping-for-the-red-hat-exam/" class="u-url">Prepping for the Red Hat Exam</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
+            <p class="dateline"><a href="posts/prepping-for-the-red-hat-exam/" rel="bookmark"><time class="post-date published dt-published" datetime="2020-02-07T11:36:09-05:00" title="2020-02-07 11:36">2020-02-07 11:36</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p><img alt="Red Hat" src="https://media-exp1.licdn.com/dms/image/C4E0BAQEto-TydTTIfQ/company-logo_200_200/0?e=2159024400&amp;v=beta&amp;t=vzgZDtu_hRuaw6XxrMkAHqaHC4I88iZPO5hrFjoTtp0"></p>
+<p>I have decided to go after the <a href="https://www.redhat.com/en/services/certification/rhcsa">RCHE/RCHSA Certificate</a>. </p>
+<p>I will be posting some details about my studying for the course under my tag for <a href="http://localhost:8000/categories/rhce/">RCHE</a>.</p>
+<p>Some initial notes:
+<a href="https://www.centos.org/">CentOS</a> is a rebuild distro of RHEL that allows for circumventing all that pesky commercial licensing hooplah.</p>
+<p>I made the mistake of going for Centos v8 but you should not that the exam is on RHEL7 not RHEL8 and there are some...</p>
+<h3>...Differences you might need to account for.</h3>
+<p>One major thing that I noticed is that the <strong>Acaconda text installer doesn't support manual partitioning in v7 but does in v8</strong>. I also noticed that on v8 trying to do an http install to KVM fails with some generic <em>dracut</em> message. You can try and hash it out on an emergency shell but why bother? For me using a v7 image resolved the problem immediately. This might be specific to me but I tried on a Lenovo ThinkServer and a Dell Optiplex 9020 both suppliers have quite good linux support and had the issue across both hardwares. </p>
+<h3>Back to the two hardwares</h3>
+<p>It has been enlightening for me to work <a href="https://www.oreilly.com/library/view/rhcsarhce-red-hat/9780071841948/">through my study guide</a> on two different systems. Reading &amp; working together on the first system, then <em>catching</em> the other system up from memory might have some <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition influences</a> but more importantly tests those skills on disparate setups. You might need to problem solve those differences for the exam or any future setup for that matter. </p>
+</div>
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/" class="u-url">Finding solace is a journey of inwardness not outwardness</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
             <p class="dateline"><a href="posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/" rel="bookmark"><time class="post-date published dt-published" datetime="2019-11-06T20:39:43-05:00" title="2019-11-06 20:39">2019-11-06 20:39</time></a></p>
@@ -138,7 +157,7 @@ float:left;
 <p>Hey thanks for being interested in me. I'll provide some basic info for you but if there's something else you would like to know feel free to reach out to me.</p>
 <h3>Employment</h3>
 <ul>
-<li>1yr+ for Sanford Airport Authority as I.T. Coordinator</li>
+<li>3yr+ for Sanford Airport Authority as I.T. Coordinator</li>
 <li>~1.5 yr for VirTech Systems LLC as Jr. Systems Administrator</li>
 <li>3 months for PowerOne in Tech Sales</li>
 <li>2 yr Private Tech Consulting for Small Businesses in Lake County, FL</li>
@@ -169,7 +188,8 @@ Getting resolvconf to resolve dns entries on two interfaces with discrete networ
 
 
         
-        <footer id="footer"><p>Contents © 2019 ,Brian Logan, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">This work is licensed under a </a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+        <footer id="footer"><p>Contents © 2020 ,Brian Logan, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">This work is licensed under a </a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            
         </footer>
 </div>
     </div>
