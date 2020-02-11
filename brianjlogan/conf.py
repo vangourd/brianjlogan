@@ -139,6 +139,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("https://family.brianjlogan.com","Family 👪"),
+        ("https://brianjlogan.com/pages/about/","About"),
         ("https://docs.google.com/forms/d/e/1FAIpQLSdB3IfeDbLuTPJk6YsyNZBubMvMOwgtA4fl6qKQJCUyssjD8Q/viewform?usp=sf_link","Contact"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),

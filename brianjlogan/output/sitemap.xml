@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://brianjlogan.com/</loc>
-  <lastmod>2020-02-07T16:20:00Z</lastmod>
+  <lastmod>2020-02-11T21:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/2018/</loc>
@@ -19,15 +19,15 @@
  </url>
  <url>
   <loc>https://brianjlogan.com/2020/</loc>
-  <lastmod>2020-02-07T16:20:00Z</lastmod>
+  <lastmod>2020-02-11T21:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/archive.html</loc>
-  <lastmod>2020-02-10T21:50:00Z</lastmod>
+  <lastmod>2020-02-11T21:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/</loc>
-  <lastmod>2020-02-07T16:37:00Z</lastmod>
+  <lastmod>2020-02-11T21:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_general/</loc>
@@ -44,6 +44,10 @@
  <url>
   <loc>https://brianjlogan.com/categories/cat_musings/</loc>
   <lastmod>2019-11-07T03:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/cat_programming/</loc>
+  <lastmod>2020-02-11T21:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_technology/</loc>
@@ -82,6 +86,10 @@
   <lastmod>2019-11-07T03:16:00Z</lastmod>
  </url>
  <url>
+  <loc>https://brianjlogan.com/pages/about/</loc>
+  <lastmod>2020-02-11T21:51:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://brianjlogan.com/pages/contact-me/</loc>
   <lastmod>2019-11-07T01:30:00Z</lastmod>
  </url>
@@ -107,11 +115,15 @@
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/interesting-google-warning/</loc>
-  <lastmod>2020-02-10T21:50:00Z</lastmod>
+  <lastmod>2020-02-11T21:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/prepping-for-the-red-hat-exam/</loc>
   <lastmod>2020-02-07T16:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/posts/project-ideas-for-learning-a-language/</loc>
+  <lastmod>2020-02-11T21:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/resolvconf-two-interfaces/</loc>

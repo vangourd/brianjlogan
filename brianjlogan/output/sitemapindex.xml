@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_general.xml</loc>
-  <lastmod>2020-02-07T16:35:00Z</lastmod>
+  <lastmod>2020-02-11T21:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_linux.xml</loc>
@@ -20,6 +20,10 @@
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_musings.xml</loc>
   <lastmod>2019-11-07T03:35:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://brianjlogan.com/categories/cat_programming.xml</loc>
+  <lastmod>2020-02-11T21:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_technology.xml</loc>
@@ -51,14 +55,14 @@
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/galleries/rss.xml</loc>
-  <lastmod>2020-02-07T16:20:00Z</lastmod>
+  <lastmod>2020-02-11T21:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/rss.xml</loc>
-  <lastmod>2020-02-10T21:50:00Z</lastmod>
+  <lastmod>2020-02-11T21:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/sitemap.xml</loc>
-  <lastmod>2020-02-10T21:50:00Z</lastmod>
+  <lastmod>2020-02-11T21:54:00Z</lastmod>
  </sitemap>
 </sitemapindex>
