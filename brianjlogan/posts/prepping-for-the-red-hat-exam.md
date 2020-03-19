@@ -13,6 +13,8 @@ I have decided to go after the [RCHE/RCHSA Certificate](https://www.redhat.com/e
 
 I will be posting some details about my studying for the course under my tag for [RCHE](http://localhost:8000/categories/rhce/).
 
+<!-- TEASER_END -->
+
 Some initial notes:
 [CentOS](https://www.centos.org/) is a rebuild distro of RHEL that allows for circumventing all that pesky commercial licensing hooplah.
 

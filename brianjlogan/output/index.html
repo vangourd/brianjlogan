@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://brianjlogan.com/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/interesting-google-warning/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/saltstack-automation-in-mixed-environments/" type="text/html">
 </head>
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -86,7 +86,21 @@ float:left;
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/interesting-google-warning/" class="u-url">Interesting Google Warning</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/saltstack-automation-in-mixed-environments/" class="u-url">SaltStack Automation in Mixed Environments</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
+            <p class="dateline"><a href="posts/saltstack-automation-in-mixed-environments/" rel="bookmark"><time class="post-date published dt-published" datetime="2020-02-12T14:12:23-05:00" title="2020-02-12 14:12">2020-02-12 14:12</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<video width="360" height="280" autoplay loop><source src="saltstack.mp4" type="video/mp4">
+    Your browser does not support the video tag
+</source></video><p>My goal is for this article to give someone a jump start on system automation in smaller mixed environments. You are likely a network engineer or sysadmin who has some experience in the field and has heard a lot about Python or Powershell automation. </p>
+<p>SaltStack is a wonderful framework to get you automating without having to solve the difficult problems with distributed computing. </p>
+<p class="more"><a href="posts/saltstack-automation-in-mixed-environments/">Read more…</a></p>
+</div>
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/interesting-google-warning/" class="u-url">Interesting Google Warning</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
             <p class="dateline"><a href="posts/interesting-google-warning/" rel="bookmark"><time class="post-date published dt-published" datetime="2020-02-10T16:46:41-05:00" title="2020-02-10 16:46">2020-02-10 16:46</time></a></p>
@@ -107,13 +121,7 @@ float:left;
 <p><img alt="Red Hat" src="https://media-exp1.licdn.com/dms/image/C4E0BAQEto-TydTTIfQ/company-logo_200_200/0?e=2159024400&amp;v=beta&amp;t=vzgZDtu_hRuaw6XxrMkAHqaHC4I88iZPO5hrFjoTtp0"></p>
 <p>I have decided to go after the <a href="https://www.redhat.com/en/services/certification/rhcsa">RCHE/RCHSA Certificate</a>. </p>
 <p>I will be posting some details about my studying for the course under my tag for <a href="http://localhost:8000/categories/rhce/">RCHE</a>.</p>
-<p>Some initial notes:
-<a href="https://www.centos.org/">CentOS</a> is a rebuild distro of RHEL that allows for circumventing all that pesky commercial licensing hooplah.</p>
-<p>I made the mistake of going for Centos v8 but you should not that the exam is on RHEL7 not RHEL8 and there are some...</p>
-<h3>...Differences you might need to account for.</h3>
-<p>One major thing that I noticed is that the <strong>Acaconda text installer doesn't support manual partitioning in v7 but does in v8</strong>. I also noticed that on v8 trying to do an http install to KVM fails with some generic <em>dracut</em> message. You can try and hash it out on an emergency shell but why bother? For me using a v7 image resolved the problem immediately. This might be specific to me but I tried on a Lenovo ThinkServer and a Dell Optiplex 9020 both suppliers have quite good linux support and had the issue across both hardwares. </p>
-<h3>Back to the two hardwares</h3>
-<p>It has been enlightening for me to work <a href="https://www.oreilly.com/library/view/rhcsarhce-red-hat/9780071841948/">through my study guide</a> on two different systems. Reading &amp; working together on the first system, then <em>catching</em> the other system up from memory might have some <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition influences</a> but more importantly tests those skills on disparate setups. You might need to problem solve those differences for the exam or any future setup for that matter. </p>
+<p class="more"><a href="posts/prepping-for-the-red-hat-exam/">Read more…</a></p>
 </div>
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/" class="u-url">Finding solace is a journey of inwardness not outwardness</a></h1>
@@ -127,24 +135,8 @@ float:left;
 <p><strong>“I have come home at last! This is my real country! I belong here. This is the land I have been looking for all my life, though I never knew it till now...Come further up, come further in!”</strong>
  <em>C.S. Lewis, The Last Battle</em></p>
 </blockquote>
-<p>There is in-escapable queasiness that grows with your journey through life. As a child you eagerly search for more comprehension of the secret adults hold. The secret of contentedness and understanding with the nature of the world. You observe adults and see their composure as bravery and emotional security. </p>
-<p>It is a finely honed facade. We're more mature and experienced than when we were children. The dark no longer scares us mostly because we've been desensitized to it. Mentally place yourself in a dark enough location and you'd be hard pressed to find anyone capable of being comfortable thinking about it.</p>
-<p><img alt="Dia Top" src="images/diatop.jpg"></p>
-<p>With exposure we ignore. We focus on the goal posts. The goal posts move and transform into things like "I need a new job", "I need to pay off my credit card", "I need to buy a nicer house". We settle into thinking of destinations as the journey. It does nicely at distracting us.</p>
-<p><img alt="Dia Middle" src="images/diamiddle.jpg"></p>
-<p>But in many ways the question of <strong>What now?</strong> stalks us and pervades. It is <strong>doubt</strong> and in some ways reasonableness. Humans loathe uncertainty in their lives and confusion. We prefer order and predictability. But if order is for life why do we expect reason in death?</p>
-<p><img alt="Dia Bottom" src="images/diabottom.jpg"></p>
-<p>It is this eventuality that has haunted me and will continue to exist in my life for the rest of it. Existential angst, the <em>Nausea</em>, can be "reasoned" with by saying death cannot be experienced. All major religions address our desire to <em>know</em> but their answers never left me with more than more doubt.</p>
-<p>The feeling is familiar yet I have come to terms with it. At least  I have come to a point where thinking about existence and finding peace is surmountable. With religion you might refer to this as a <em>finding of faith or spirit</em> but it is secular for my experience. </p>
-<p>Søren Kierkegaard refers to this as a <em>"Leap of faith"</em>.  It is <em>hope</em> in its purest sense. It is against my nature to make an illogical argument for solace but that is where I find my peace. </p>
-<p><img alt="Floating" src="images/floating.jpg"></p>
-<p>It is in the limbo of relinquishing your power of understanding, your desire for control, that you find peace in existence. It is ethereally a part of you, at all times, yet you hardly pay attention to it. </p>
-<p>Kierkegaard too emphasizes the importance of <em>inwardness</em>. Although you might find your awakening call <em>externally</em> it is merely the sound to attention. Your growth comes from an <strong>inward journey</strong>.</p>
-<p><img alt="Meditation" src="images/meditation.jpg"></p>
-<p>I have found great solace alone in the <em>illogical</em> satisfaction of faith. Preferring to accept "<em>I don't know</em>" as opposed to deciding a truth. I too cannot make this <em>leap</em> without acknowledging it. However I try my best day in and day out to forget the reason for which I live inside this contradiction. Both believing in reason and practicing ignorance. Attempting to make the great movement.</p>
-<p>It is easier to forget everything and be. <em>Mindfulness</em>. </p>
-<p><a href="https://youtu.be/3nwwKbM_vJc?t=1265">Jon Kabat-Zinn at Google speaking of Mindfulness</a> as well as his great book *<a href="https://www.goodreads.com/book/show/14096.Wherever_You_Go_There_You_Are*">Wherever You Go, There You Are</a>
-<img alt="WYGTYA" src="images/whereveryougo.jpg"></p>
+<p>There is in-escapable queasiness that grows with your journey through life. As a child you eagerly search for more comprehension of the secret adults hold. The secret of contentedness and understanding with the nature of the world. You observe adults and see their composure as bravery and emotional security.</p>
+<p class="more"><a href="posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/">Read more…</a></p>
 </div>
     </div>
     </article><article class="post h-entry post-micro"><header><h1 class="post-title p-name"><a href="posts/hello-world/" class="u-url">Introduction of my new blog</a></h1>

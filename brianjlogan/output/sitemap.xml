@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://brianjlogan.com/</loc>
-  <lastmod>2020-02-11T21:40:00Z</lastmod>
+  <lastmod>2020-03-19T15:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/2018/</loc>
@@ -23,11 +23,19 @@
  </url>
  <url>
   <loc>https://brianjlogan.com/archive.html</loc>
-  <lastmod>2020-02-11T21:54:00Z</lastmod>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/</loc>
-  <lastmod>2020-02-11T21:40:00Z</lastmod>
+  <lastmod>2020-03-05T14:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/aruba/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/cat_automation/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_general/</loc>
@@ -58,6 +66,14 @@
   <lastmod>2019-11-07T01:22:00Z</lastmod>
  </url>
  <url>
+  <loc>https://brianjlogan.com/categories/cisco/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/linux/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://brianjlogan.com/categories/mindfulness-philosophy/</loc>
   <lastmod>2019-11-07T03:35:00Z</lastmod>
  </url>
@@ -70,12 +86,28 @@
   <lastmod>2019-11-07T03:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://brianjlogan.com/categories/procurve/</loc>
+  <lastmod>2020-03-05T14:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/python/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://brianjlogan.com/categories/rhce/</loc>
   <lastmod>2020-02-07T16:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/rhel/</loc>
   <lastmod>2020-02-07T16:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/saltstack/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/windows/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/galleries/</loc>
@@ -128,6 +160,10 @@
  <url>
   <loc>https://brianjlogan.com/posts/resolvconf-two-interfaces/</loc>
   <lastmod>2019-11-07T03:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/posts/saltstack-automation-in-mixed-environments/</loc>
+  <lastmod>2020-02-12T19:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/studying-for-the-rhel-exam/</loc>

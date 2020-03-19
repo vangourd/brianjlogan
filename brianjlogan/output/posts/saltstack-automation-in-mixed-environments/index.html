@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content=" My findings on saltstack network automation. ">
+<meta name="viewport" content="width=device-width">
+<title>SaltStack Automation in Mixed Environments | Brian J Logan's Blog</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://brianjlogan.com/posts/saltstack-automation-in-mixed-environments/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Brian Logan">
+<link rel="prev" href="../interesting-google-warning/" title="Interesting Google Warning" type="text/html">
+<meta property="og:site_name" content="Brian J Logan's Blog">
+<meta property="og:title" content="SaltStack Automation in Mixed Environments">
+<meta property="og:url" content="https://brianjlogan.com/posts/saltstack-automation-in-mixed-environments/">
+<meta property="og:description" content=" My findings on saltstack network automation. ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-02-12T14:12:23-05:00">
+<meta property="article:tag" content="cisco">
+<meta property="article:tag" content="procurve">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="saltstack">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <!--<div class="sidebar-item">
+            
+        </div>-->
+        
+    	<style>
+#gr_updates_widget{
+border-radius: 5px;
+background-color:#fff;
+border:solid #683205 10px;
+-webkit-box-shadow: 0px 0px 4px 1px #595959,
+inset 0px 0px 0px 1px #7D730B;
+-moz-box-shadow: 0px 0px 4px 1px #595959,
+inset 0px 0px 0px 1px #7D730B;
+box-shadow: 0px 0px 4px 1px #595959,
+inset 0px 0px 0px 1px #7D730B;
+padding:15px 0 35px 15px;
+width:250px;
+height:330px;
+}
+#gr_footer{
+margin-bottom:10px;
+}
+#gr_updates_widget p{
+padding:0px;
+margin:0;
+font-size:14px;
+}
+#gr_footer img{
+width:100px;
+float:left;
+}
+#gr_updates_widget img{
+	border-style:none;
+}
+</style>
+<div id="gr_updates_widget">
+	  <iframe id="the_iframe" src="https://www.goodreads.com/widgets/user_update_widget?height=400&amp;num_updates=3&amp;user=75346899&amp;width=200" width="200" height="250" frameborder="0"></iframe>
+		<div id="gr_footer">
+		  <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" rel="nofollow" src="https://www.goodreads.com/images/layout/goodreads_logo_140.png"></a>
+		</div>
+	</div>
+
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="https://family.brianjlogan.com">Family 👪</a>
+        <a class="sidebar-nav-item" href="https://brianjlogan.com/pages/about/">About</a>
+        <a class="sidebar-nav-item" href="https://docs.google.com/forms/d/e/1FAIpQLSdB3IfeDbLuTPJk6YsyNZBubMvMOwgtA4fl6qKQJCUyssjD8Q/viewform?usp=sf_link">Contact</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://brianjlogan.com/" title="Brian J Logan's Blog" rel="home">Brian J Logan's Blog</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">SaltStack Automation in Mixed Environments</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="post-date published dt-published" datetime="2020-02-12T14:12:23-05:00" itemprop="datePublished" title="2020-02-12 14:12">2020-02-12 14:12</time></a></p>
+                <meta name="description" itemprop="description" content=" My findings on saltstack network automation. ">
+</div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<video width="360" height="280" autoplay loop><source src="../../saltstack.mp4" type="video/mp4">
+    Your browser does not support the video tag
+</source></video><p>My goal is for this article to give someone a jump start on system automation in smaller mixed environments. You are likely a network engineer or sysadmin who has some experience in the field and has heard a lot about Python or Powershell automation. </p>
+<p>SaltStack is a wonderful framework to get you automating without having to solve the difficult problems with distributed computing. </p>
+<!-- TEASER_END -->
+
+<h2>Learn Systems Automation</h2>
+<p>Systems Automation frameworks combine powerful tools for querying, modifying, reacting to, and ultimately mastering the state of your infrastructure. Without these tools you will be forced to mimic their utilites using scripting or programming languages. Make your life easier! </p>
+<p>SaltStack provides open source modular components for maximum interoperability with the systems it must manage. It does certain jobs well and leaves the rest up to SysAdmins to develop and implement for their environment. It has uses cases for administrating desktops, servers, and networking hardware. It has a place in the cloud, at home, and in the datacenter. All the while you're enjoying the benefits of abstracting and automating your work away you will be capturing valuable insights into the configuration model documenting it for all to understand. </p>
+<h2>Automate your Desktop Environment</h2>
+<p>Most workstation configurations are performed by Desktop support and scripted when possible. Set your system to auto-configure based on the metadata you assign to a machine. If there are differences between <em>Marketing</em> and <em>Accounting</em> then reduce your configuration step from performing the differences yourself to assigning the metadata and allowing the automation system to take it from there.  </p>
+<ul>
+<li>Deploy software from your package manager</li>
+<li>Lock versions for compatibility</li>
+<li>Push updates for known security patches</li>
+<li>Push Audit logging rule granularity based on machine risk</li>
+<li>Tighten Firewalls after receiving IPS Events</li>
+<li>Roll out changes, test, and roll-back with poor results</li>
+</ul>
+<h2>Automate your Servers and your Services</h2>
+<p>Services transcend individual servers. Define a state for your service and deploy it to all of the servers serving it. Define the firewall exceptions, the software requirements, the scheduled tasks, even the resource requirements and deploy. Understand the consistencies in your infrastructure and make compatible changes throughout your environment.</p>
+<h2>Automate your network</h2>
+<p>Version control your network configuration. Capture "snowflakiness" with conditionals and metadata to be monitored and evolved. Transcend single manufacturer deployments by abstracting the differences.  </p>
+<p><strong>Choose SaltStack over Puppet, Ansible, Chef, or others</strong></p>
+<p>It's mature enough to be used in the enterprise.</p>
+<p>It's written in Python3 which means reading and understanding the internals when someone didn't have time to write documentation is feasible. </p>
+<p>It's a very easy to use framework for custom automation. It doesn't do EVERYTHING out of the box (even though it feels like it at first) but with Python3 it's a script, or an <a href="https://docs.saltstack.com/en/latest/ref/modules/index.html">execution module</a>, a <a href="https://docs.saltstack.com/en/latest/ref/runners/">runner</a>,a <a href="https://docs.saltstack.com/en/latest/ref/returners/">returner</a>, or a <a href="https://docs.saltstack.com/en/master/ref/proxy/all/index.html">proxy module</a> away. You get the idea 💡!</p>
+<p>It's open source and free to use. </p>
+<p>It is extremely easy to get started on both Windows, Mac, or Linux.</p>
+<p>Jinja2 and the Python specificaton are much easier to read and write than DSL's in other languages. Additionally use these skills for anything else Python related. </p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/cisco/" rel="tag">cisco</a></li>
+            <li><a class="tag p-category" href="../../categories/procurve/" rel="tag">procurve</a></li>
+            <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+            <li><a class="tag p-category" href="../../categories/saltstack/" rel="tag">saltstack</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../interesting-google-warning/" rel="prev" title="Interesting Google Warning">Previous post</a>
+            </li>
+        </ul></nav></aside></article><footer id="footer"><p>Contents © 2020 ,Brian Logan, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">This work is licensed under a </a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

@@ -10,7 +10,9 @@
 > **“I have come home at last! This is my real country! I belong here. This is the land I have been looking for all my life, though I never knew it till now...Come further up, come further in!”**
 >  *C.S. Lewis, The Last Battle*
 
-There is in-escapable queasiness that grows with your journey through life. As a child you eagerly search for more comprehension of the secret adults hold. The secret of contentedness and understanding with the nature of the world. You observe adults and see their composure as bravery and emotional security. 
+There is in-escapable queasiness that grows with your journey through life. As a child you eagerly search for more comprehension of the secret adults hold. The secret of contentedness and understanding with the nature of the world. You observe adults and see their composure as bravery and emotional security.
+
+<!-- TEASER_END -->
 
 It is a finely honed facade. We're more mature and experienced than when we were children. The dark no longer scares us mostly because we've been desensitized to it. Mentally place yourself in a dark enough location and you'd be hard pressed to find anyone capable of being comfortable thinking about it.
 
