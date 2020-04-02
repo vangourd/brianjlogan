@@ -10,8 +10,12 @@
   <lastmod>2020-03-05T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://brianjlogan.com/categories/books.xml</loc>
+  <lastmod>2020-04-02T12:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://brianjlogan.com/categories/cat_automation.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-01T20:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_general.xml</loc>
@@ -31,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_programming.xml</loc>
-  <lastmod>2020-02-11T21:38:00Z</lastmod>
+  <lastmod>2020-04-02T12:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_technology.xml</loc>
@@ -43,7 +47,7 @@
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cisco.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-01T20:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/linux.xml</loc>
@@ -63,11 +67,15 @@
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/procurve.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-01T20:19:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://brianjlogan.com/categories/python-books.xml</loc>
+  <lastmod>2020-04-02T12:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/python.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-02T12:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/rhce.xml</loc>
@@ -79,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/saltstack.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-01T20:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/windows.xml</loc>
@@ -87,14 +95,14 @@
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/galleries/rss.xml</loc>
-  <lastmod>2020-02-11T21:54:00Z</lastmod>
+  <lastmod>2020-04-01T20:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/rss.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-02T12:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/sitemap.xml</loc>
-  <lastmod>2020-03-19T15:03:00Z</lastmod>
+  <lastmod>2020-04-02T12:25:00Z</lastmod>
  </sitemap>
 </sitemapindex>

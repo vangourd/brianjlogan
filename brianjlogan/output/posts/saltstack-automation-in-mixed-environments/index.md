@@ -51,7 +51,7 @@ It's written in Python3 which means reading and understanding the internals when
 
 It's a very easy to use framework for custom automation. It doesn't do EVERYTHING out of the box (even though it feels like it at first) but with Python3 it's a script, or an [execution module](https://docs.saltstack.com/en/latest/ref/modules/index.html), a [runner](https://docs.saltstack.com/en/latest/ref/runners/),a [returner](https://docs.saltstack.com/en/latest/ref/returners/), or a [proxy module](https://docs.saltstack.com/en/master/ref/proxy/all/index.html) away. You get the idea 💡!
 
-It's open source and free to use. 
+It's open source and free to use.
 
 It is extremely easy to get started on both Windows, Mac, or Linux.
 
