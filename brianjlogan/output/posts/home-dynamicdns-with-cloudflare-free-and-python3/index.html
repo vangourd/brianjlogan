@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Home DynamicDNS with CloudFlare Free and Python3 | Brian J Logan's Blog</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://brianjlogan.com/posts/home-dynamicdns-with-cloudflare-free-and-python3/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Brian Logan">
+<link rel="prev" href="../quick-guis-in-python3/" title="Quick GUIs in Python3" type="text/html">
+<meta property="og:site_name" content="Brian J Logan's Blog">
+<meta property="og:title" content="Home DynamicDNS with CloudFlare Free and Python3">
+<meta property="og:url" content="https://brianjlogan.com/posts/home-dynamicdns-with-cloudflare-free-and-python3/">
+<meta property="og:description" content="I recently setup a new home linux router. One benefit is I now have direct access to the heart of my home network. Including a direct interface to the internet. Here's how I utilized that access and o">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-04T18:46:46-04:00">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <!--<div class="sidebar-item">
+            
+        </div>-->
+        
+    	<style>
+#gr_updates_widget{
+border-radius: 5px;
+background-color:#fff;
+border:solid #683205 10px;
+-webkit-box-shadow: 0px 0px 4px 1px #595959,
+inset 0px 0px 0px 1px #7D730B;
+-moz-box-shadow: 0px 0px 4px 1px #595959,
+inset 0px 0px 0px 1px #7D730B;
+box-shadow: 0px 0px 4px 1px #595959,
+inset 0px 0px 0px 1px #7D730B;
+padding:15px 0 35px 15px;
+width:250px;
+height:330px;
+}
+#gr_footer{
+margin-bottom:10px;
+}
+#gr_updates_widget p{
+padding:0px;
+margin:0;
+font-size:14px;
+}
+#gr_footer img{
+width:100px;
+float:left;
+}
+#gr_updates_widget img{
+	border-style:none;
+}
+</style>
+<div id="gr_updates_widget">
+	  <iframe id="the_iframe" src="https://www.goodreads.com/widgets/user_update_widget?height=400&amp;num_updates=3&amp;user=75346899&amp;width=200" width="200" height="250" frameborder="0"></iframe>
+		<div id="gr_footer">
+		  <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" rel="nofollow" src="https://www.goodreads.com/images/layout/goodreads_logo_140.png"></a>
+		</div>
+	</div>
+
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="https://family.brianjlogan.com">Family 👪</a>
+        <a class="sidebar-nav-item" href="https://brianjlogan.com/pages/about/">About</a>
+        <a class="sidebar-nav-item" href="https://docs.google.com/forms/d/e/1FAIpQLSdB3IfeDbLuTPJk6YsyNZBubMvMOwgtA4fl6qKQJCUyssjD8Q/viewform?usp=sf_link">Contact</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://brianjlogan.com/" title="Brian J Logan's Blog" rel="home">Brian J Logan's Blog</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">Home DynamicDNS with CloudFlare Free and Python3</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Brian Logan</span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="post-date published dt-published" datetime="2020-05-04T18:46:46-04:00" itemprop="datePublished" title="2020-05-04 18:46">2020-05-04 18:46</time></a></p>
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p><img alt="Picture of hand drawn cloudflare logo" src="../../images/cloudflare/logo.gif"></p>
+<p>I recently setup a new home linux router. One benefit is I now have direct access to the heart of my home network. Including a direct interface to the internet. Here's how I utilized that access and opened a consistent DNS domain to my home network without having to use DynDNS or get a business internet account.</p>
+<!-- TEASER_END -->
+
+<h2>Rant <a href="#setup">or skip to the setup</a>
+</h2>
+<p>I have always been upset about how my local ISP doesn't allow static IP addresses on residential accounts. They even charge $200+ for an equivalent speed business account. So I wasn't going down that road. The reason these ISP's don't give you a static IP is that they discourage hosting services becuase the bandwidth is so asymmetrical. You can't really host a real website because you'll be choking up all the "shared" tenants on their oversubscribed links. </p>
+<p>This is a real problem for ISP's because there are a whole lot more "subscribers" than "publishers" and equivalent uplink bandwidth to all customers so anyone can choose to be a "publisher" on a whim is a math problem in itself. </p>
+<p><img alt="Angry Brian on the phone with ISP's" src="../../images/cloudflare/ipchange.gif"></p>
+<p>That being said the issue is exacerbated by ISP's having neglected the US Network infrastructure and allowing it to fall behind the rest of the world. Mostly this is because of the ever centralizing <a href="https://en.wikipedia.org/wiki/Internet_in_the_United_States#Internet_taxes#Broadband_providers">monopolization of the ISP business</a> remember the <a href="https://en.wikipedia.org/wiki/Breakup_of_the_Bell_System">Bells</a>? well history is repeating itself again. </p>
+<h2>The Setup</h2>
+<p><a id="setup"></a></p>
+<p>The primary issue with hosting services from your home, aside from the bandwidth limitation we discussed before, is that your IP Address is dynamic. That is it changes periodically disturbing the DNS records necessary to locate your place on the internet. </p>
+<p>A common way of mitigating this are <em>Dynamic DNS</em> services like DynDNS. They usually come as built in clients on Camera DVR systems and the like. Although you can download clients for your computer there are two things I really hate about this.</p>
+<p>1). It's usually not for free and if it is you have to use their vanity url. Example: customer123@dyndns.com. <strong>Yuck!</strong></p>
+<p>2). And you have to download some crappy middleware client. </p>
+<p>Here's a really crappy network diagram of how I pushed control of my WAN connection from the customer ISP equipment to my Linux Router. Having this "shim" where I can run scripts, control routes, and host services like DHCP, DNS really make for a much more flexible network environment for my home.</p>
+<p><img alt="Before and After" src="../../images/cloudflare/network_layout.jpg"></p>
+<p>What I needed was fairly simple.</p>
+<ol>
+<li>Find out what my current IP Address is.</li>
+<li>Tell the Internet's what my IP Address is. </li>
+</ol>
+<p>It would be very easy for a DNS provider to build a client for this functionality. I haven't heard of one doing so my assumption being that it would increase demand on their infrastructure far beyond what they currently support. Primarily DNS changes on your registrar occur when you're making major site or service changes. A Dynamic DNS system needs to update at least as frequently as your home IP Address. </p>
+<p>Building a script to handle this using std libs in Python was fairly easy. It allowed me to know I don't need to scan for third party vulnerabilities and introduce the difficulty of installing them when I want to setup something new. </p>
+<p><a href="https://github.com/vangourd/cfddns">Github CFDDNS.py</a></p>
+<p>Here's a link to the script posted on github.</p>
+<p>Note: You will need a CloudFlare account which for Hobbyists/Home users is free!
+You need to point your domain's nameservers to cloudflare, generate an API Token, and input your details into the configuration file. </p>
+<p>I actually built it using VSCode's Remote SSH feature and turned it into a Systemd Service with a Timer. The script runs on a schedule, sends stderr and stdout logs to journalctl for debugging, and includes an installer script for easy setup. </p>
+<p>Just clone the repo, tweak the configuration file, run the installer, and voila!</p>
+<p>Unfortunately this isn't working on Windows yet but I might find some time to try to get it working.</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../quick-guis-in-python3/" rel="prev" title="Quick GUIs in Python3">Previous post</a>
+            </li>
+        </ul></nav></aside></article><footer id="footer"><p>Contents © 2020 ,Brian Logan, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">This work is licensed under a </a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
