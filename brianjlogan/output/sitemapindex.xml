@@ -6,103 +6,115 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://brianjlogan.com/categories/arrays-python-c.xml</loc>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://brianjlogan.com/categories/arrays.xml</loc>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://brianjlogan.com/categories/aruba.xml</loc>
-  <lastmod>2020-03-05T14:11:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/books.xml</loc>
-  <lastmod>2020-05-04T22:31:00Z</lastmod>
+  <lastmod>2020-12-15T17:04:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://brianjlogan.com/categories/c.xml</loc>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_automation.xml</loc>
-  <lastmod>2020-04-01T20:19:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_general.xml</loc>
-  <lastmod>2020-02-11T21:52:00Z</lastmod>
+  <lastmod>2020-12-15T17:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_linux.xml</loc>
-  <lastmod>2020-02-12T19:43:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_muses.xml</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_musings.xml</loc>
-  <lastmod>2020-02-12T19:43:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_programming.xml</loc>
-  <lastmod>2020-05-04T22:31:00Z</lastmod>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_technology.xml</loc>
-  <lastmod>2020-02-10T21:50:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cat_testing.xml</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/cisco.xml</loc>
-  <lastmod>2020-04-01T20:19:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/linux.xml</loc>
-  <lastmod>2020-03-05T14:11:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/mindfulness-philosophy.xml</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/mindfulness.xml</loc>
-  <lastmod>2020-02-12T19:43:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/philosophy.xml</loc>
-  <lastmod>2020-02-12T19:43:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/procurve.xml</loc>
-  <lastmod>2020-04-01T20:19:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/python-books.xml</loc>
-  <lastmod>2020-04-02T12:25:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/python.xml</loc>
-  <lastmod>2020-05-04T22:31:00Z</lastmod>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/rhce.xml</loc>
-  <lastmod>2020-02-12T19:43:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/rhel.xml</loc>
-  <lastmod>2020-02-07T16:28:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/saltstack.xml</loc>
-  <lastmod>2020-04-01T20:19:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/categories/windows.xml</loc>
-  <lastmod>2020-03-05T14:11:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/galleries/rss.xml</loc>
-  <lastmod>2020-04-01T20:19:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/rss.xml</loc>
-  <lastmod>2020-05-04T22:47:00Z</lastmod>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://brianjlogan.com/sitemap.xml</loc>
-  <lastmod>2020-05-04T22:47:00Z</lastmod>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
  </sitemap>
 </sitemapindex>

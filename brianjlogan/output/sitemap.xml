@@ -7,182 +7,202 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://brianjlogan.com/</loc>
-  <lastmod>2020-03-19T19:17:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/2018/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/2019/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/2020/</loc>
-  <lastmod>2020-02-12T19:13:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/archive.html</loc>
-  <lastmod>2020-05-04T22:46:00Z</lastmod>
+  <lastmod>2020-12-15T17:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/</loc>
-  <lastmod>2020-04-02T12:25:00Z</lastmod>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/arrays-python-c/</loc>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/arrays/</loc>
+  <lastmod>2020-12-15T17:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/aruba/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/books/</loc>
-  <lastmod>2020-04-02T12:25:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/categories/c/</loc>
+  <lastmod>2020-12-15T17:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_automation/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_general/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_linux/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_muses/</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_musings/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_programming/</loc>
-  <lastmod>2020-02-11T21:39:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_technology/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cat_testing/</loc>
-  <lastmod>2019-11-07T01:21:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/cisco/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/linux/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/mindfulness-philosophy/</loc>
-  <lastmod>2019-11-07T03:34:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/mindfulness/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/philosophy/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/procurve/</loc>
-  <lastmod>2020-03-05T14:12:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/python-books/</loc>
-  <lastmod>2020-04-02T12:25:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/python/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/rhce/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/rhel/</loc>
-  <lastmod>2020-02-07T16:21:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/saltstack/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/categories/windows/</loc>
-  <lastmod>2020-02-12T19:14:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/galleries/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/listings/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/pages/about/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/pages/contact-me/</loc>
-  <lastmod>2019-11-07T01:25:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/pages/contact/</loc>
-  <lastmod>2019-11-07T01:18:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/about/</loc>
-  <lastmod>2020-02-11T21:52:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/finding-oneself-is-a-journey-of-inwardness-not-outwardness/</loc>
-  <lastmod>2019-11-07T01:41:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/finding-solace-is-a-journey-of-inwardness-not-outwardness/</loc>
-  <lastmod>2020-02-12T19:43:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/hello-world/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/home-dynamicdns-with-cloudflare-free-and-python3/</loc>
-  <lastmod>2020-05-04T22:47:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/interesting-google-warning/</loc>
-  <lastmod>2020-02-12T19:13:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/prepping-for-the-red-hat-exam/</loc>
-  <lastmod>2020-02-12T19:44:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/project-ideas-for-learning-a-language/</loc>
-  <lastmod>2020-02-11T21:39:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/quick-guis-in-python3/</loc>
-  <lastmod>2020-04-01T20:21:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/resolvconf-two-interfaces/</loc>
-  <lastmod>2020-02-11T21:55:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/saltstack-automation-in-mixed-environments/</loc>
-  <lastmod>2020-03-19T19:17:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/posts/should-array-index-start-at-0-or-1/</loc>
+  <lastmod>2020-12-15T17:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://brianjlogan.com/posts/studying-for-the-rhel-exam/</loc>
-  <lastmod>2020-02-07T16:29:00Z</lastmod>
+  <lastmod>2020-12-15T16:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://brianjlogan.com/posts/xah-lee-language-design-should-array-index-start-at-0-or-1/</loc>
+  <lastmod>2020-12-15T17:11:00Z</lastmod>
  </url>
 </urlset>
